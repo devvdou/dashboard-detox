@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "createdAt": "2025-10-27T10:00:00.000Z",
+    "startDate": "2025-10-27",
+    "lastEdit": "2025-10-27T10:05:00.000Z",
+    "theme": "dark"
+  },
+  "days": {
+    "1": { "date": "2025-10-27", "noSmoking": true, "exercise": true, "respiration": true, "foodClean": true, "focus90": false, "sleepHours": 7.5, "mood": 6, "notes": "Me costó un poco la tarde" },
+    "2": { "date": "2025-10-28", "noSmoking": true }
+  },
+  "weeklySummary": {
+    "week1": { "energy": 6, "anxiety": 3, "respiration": "better", "notes": "OK" }
+  },
+  "events": [
+    { "type": "slip", "dateTime": "2025-10-29T22:12:00Z", "note": "Una calada, estrés" }
+  ]
+}

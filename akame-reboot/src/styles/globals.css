@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-neutral-900 text-neutral-100 font-inter antialiased;
+}
+
+.container-global {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.glass-card {
+  @apply bg-gradient-to-b from-white/5 to-white/10 rounded-2xl p-4 shadow-md;
+}
+
+.sidebar-glass {
+  @apply w-72 bg-[rgba(255,255,255,0.03)] backdrop-blur-md rounded-2xl p-4 shadow-lg;
+}
+
+.habit-node {
+  @apply w-12 h-12 sm:w-12 sm:h-12 grid place-items-center rounded-lg cursor-pointer transition-transform hover:scale-105;
+}
+
+.habit-node-completed {
+  @apply bg-gradient-to-br from-[#6EE7B7] to-[#60A5FA] text-black shadow-inner;
+}
+
+/* micro animation utility */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+.animate-pulse-soft {
+  animation: pulse 1s infinite;
+}
